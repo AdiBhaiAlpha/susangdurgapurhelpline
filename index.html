@@ -7,88 +7,192 @@
   <meta name="description" content="Download the Susang Durgapur Helpline app - Your gateway to essential services and updates in Susang Durgapur, Netrokona.">
   <meta name="keywords" content="Susang Durgapur, helpline app, local services, Netrokona, APK download, Android app">
   <meta name="author" content="Susang Durgapur Helpline Team">
+  <link rel="icon" href="https://raw.githubusercontent.com/AdiBhaiAlpha/susangdurgapurhelpline/refs/heads/main/20241227_214204.png" type="image/png">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
+    /* Bangladesh Government-inspired theme */
+    :root {
+      --primary-color: #006a4e;
+      --secondary-color: #f42a41;
+      --text-color: #333;
+      --bg-color: #f0f0f0;
     }
 
     body {
-      background-color: #f5f5f5;
-      color: #333;
-    }
-
-    .header {
-      background-color: #006400;
-      color: #fff;
-      text-align: center;
-      padding: 20px 0;
-    }
-
-    .main {
-      padding: 20px;
-      text-align: center;
-    }
-
-    h1, h2 {
-      color: #006400;
-    }
-
-    .download-btn {
-      background-color: #ff0000;
-      color: #fff;
-      padding: 10px 20px;
-      text-decoration: none;
-      border-radius: 5px;
-      font-size: 16px;
-    }
-
-    .download-btn:hover {
-      background-color: #cc0000;
-    }
-
-    .footer {
-      background-color: #006400;
-      color: #fff;
-      text-align: center;
-      padding: 10px 0;
-      margin-top: 20px;
+      font-family: 'Bangla', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
     }
 
     .container {
       width: 90%;
       max-width: 1200px;
       margin: 0 auto;
+      padding: 20px;
+    }
+
+    header {
+      background-color: var(--primary-color);
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    .logo {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 10px;
+    }
+
+    main {
+      padding: 40px 0;
+    }
+
+    .download-section {
+      background-color: white;
+      border-radius: 8px;
+      padding: 30px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .download-button {
+      display: inline-block;
+      background-color: var(--secondary-color);
+      color: white;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .download-button:hover {
+      background-color: #d42238;
+    }
+
+    .features {
+      margin-top: 40px;
+    }
+
+    .features h2 {
+      color: var(--primary-color);
+    }
+
+    .feature-list {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .feature-list li {
+      margin-bottom: 10px;
+      padding-left: 20px;
+      position: relative;
+    }
+
+    .feature-list li::before {
+      content: '✓';
+      color: var(--primary-color);
+      position: absolute;
+      left: 0;
+    }
+
+    .footer {
+      background-color: var(--primary-color);
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+
+    .footer a {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      .download-button {
+        font-size: 1em;
+        padding: 12px 24px;
+      }
     }
   </style>
 </head>
 <body>
-  <header class="header">
+  <header>
     <div class="container">
+      <img src="https://raw.githubusercontent.com/AdiBhaiAlpha/susangdurgapurhelpline/refs/heads/main/20241227_214204.png" alt="Susang Durgapur Helpline Logo" class="logo">
       <h1>Susang Durgapur Helpline</h1>
-      <p>Your gateway to essential services in Susang Durgapur</p>
     </div>
   </header>
-  <main class="main">
+
+  <main>
     <div class="container">
-      <h2>Download the App</h2>
-      <p>Click the button below to download the Susang Durgapur Helpline app and stay connected to local services.</p>
-      <a href="https://apk.e-droid.net/apk/app3429014-x8itkq.apk?v=2" download="Susang_Durgapur_Helpline.apk" class="download-btn">Download Now</a>
+      <section class="download-section">
+        <h2>Download Our App</h2>
+        <p>Get instant access to essential services and updates for Susang Durgapur, Netrokona.</p>
+        <a href="https://apk.e-droid.net/apk/app3429014-x8itkq.apk?v=2" class="download-button" id="downloadBtn">Download APK</a>
+      </section>
+
+      <section class="features">
+        <h2>App Features</h2>
+        <ul class="feature-list">
+          <li>Quick access to local government services</li>
+          <li>Real-time updates and notifications</li>
+          <li>Emergency contact information</li>
+          <li>Community news and events</li>
+          <li>User-friendly interface in Bengali and English</li>
+        </ul>
+      </section>
     </div>
   </main>
+
   <footer class="footer">
     <div class="container">
       <p>&copy; 2024 Susang Durgapur Helpline. All rights reserved.</p>
-      <p>Email: <a href="mailto:susangdurgapurhelpline@gmail.com" style="color: #fff; text-decoration: underline;">susangdurgapurhelpline@gmail.com</a></p>
-      <p>Phone: <a href="tel:+8801316655254" style="color: #fff; text-decoration: underline;">+8801316655254</a></p>
+      <p>Email: <a href="mailto:susangdurgapurhelpline@gmail.com">susangdurgapurhelpline@gmail.com</a></p>
+      <p>Phone: <a href="tel:+8801316655254">+8801316655254</a></p>
     </div>
   </footer>
+
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       console.log("Susang Durgapur Helpline Page Loaded Successfully!");
+
+      const downloadBtn = document.getElementById('downloadBtn');
+      downloadBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const apkUrl = 'https://apk.e-droid.net/apk/app3429014-x8itkq.apk?v=2';
+        const fileName = 'Susang_Durgapur_Helpline.apk';
+
+        fetch(apkUrl)
+          .then(response => response.blob())
+          .then(blob => {
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.style.display = 'none';
+            a.href = url;
+            a.download = fileName;
+            document.body.appendChild(a);
+            a.click();
+            window.URL.revokeObjectURL(url);
+            alert('Your download has started. The file will be saved as ' + fileName);
+          })
+          .catch(() => alert('Download failed. Please try again later.'));
+      });
     });
   </script>
 </body>
 </html>
+
