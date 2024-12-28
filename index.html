@@ -169,30 +169,7 @@
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       console.log("Susang Durgapur Helpline Page Loaded Successfully!");
-
-      const downloadBtn = document.getElementById('downloadBtn');
-      downloadBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        const apkUrl = 'https://apk.e-droid.net/apk/app3429014-x8itkq.apk?v=2';
-        const fileName = 'Susang_Durgapur_Helpline.apk';
-
-        fetch(apkUrl)
-          .then(response => response.blob())
-          .then(blob => {
-            const url = window.URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.style.display = 'none';
-            a.href = url;
-            a.download = fileName;
-            document.body.appendChild(a);
-            a.click();
-            window.URL.revokeObjectURL(url);
-            alert('Your download has started. The file will be saved as ' + fileName);
-          })
-          .catch(() => alert('Download failed. Please try again later.'));
-      });
     });
   </script>
 </body>
 </html>
-
